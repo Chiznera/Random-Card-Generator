@@ -30,7 +30,8 @@ window.onload = function() {
   }
   
   function randomCard() {
-    let cardSuit = document.querySelectorAll(`.cardSuit`)
-    cardSuit.innerhtml = (`${cardPull[0]}`)
+    let cardSuit = document.querySelectorAll(`.cardSuit`);
+    cardSuit.innerhtml = (`<h1>${cardPull[0]}</h1>`);
+    document.body.appendChild(cardSuit)
   }
 };
