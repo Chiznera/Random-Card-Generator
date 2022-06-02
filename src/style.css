@@ -1,1 +1,35 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.cardBody {
+    width: 50rem;
+    height: 50rem;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardSuitLeft {
+    width: 10rem;
+    height: 10rem;
+    background-color: Blue;
+}
+
+.cardSuitRight {
+    width: 10rem;
+    height: 10rem;
+    background-color: Blue;
+    margin-left: 40rem;
+}
+
+.cardValue {
+    width: 10rem;
+    height: 10rem;
+    background-color: green;
+    margin-left: 20rem;
+}
