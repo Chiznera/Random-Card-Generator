@@ -11,21 +11,16 @@ window.onload = function() {
       cards.push([Suit[s], Value[v]]);
     }
   }
-
-  function cardPull() {
-    return cards[Math.floor(Math.random() * cards.length)];
-  }
-  console.log(cardPull());
-
+  var randomCard = cards[Math.floor(Math.random() * cards.length)];
   document.body.innerHTML = `<div class="cardBody">
   <div class="cardSuit cardSuitLeft">
-  <h1>${cardPull[0]}</h1>
+  <h1>${randomCard[0]}</h1>
   </div>
   <div class="cardValue">
-  <h1>${cardPull[1]}</h1>
+  <h1>${randomCard[1]}</h1>
   </div>
   <div class="cardSuit cardSuitRight">
-  <h1>${cardPull[0]}</h1>
+  <h1>${randomCard[0]}</h1>
   </div>
 </div>`;
 };
